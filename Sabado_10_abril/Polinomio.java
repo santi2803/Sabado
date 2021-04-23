@@ -92,10 +92,15 @@ public class Polinomio {
     // p1.derivada(p2);
     void derivadaPol(Polinomio p2) {
         Nodo aux = p2.pol;
+        pol = null;
+        float coef;
+        int exp;
         while (aux != null) {
-            
+            coef = aux.coef * aux.exp;
+            exp = aux.exp - 1;
+            ingresarTermino(coef, exp);
+            aux = aux.sig;
         }
-        System.out.println("Plinomio"+p2.pol);
     }
 
     // p2 = p3.derivada(p1);

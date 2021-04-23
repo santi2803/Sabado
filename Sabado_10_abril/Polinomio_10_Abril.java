@@ -98,7 +98,10 @@ class Lamina extends JPanel {
                         "Polinomio uno:\n" + objeto1.mostrarPolinomio() + "\nPolinomio dos\n"
                                 + objeto2.mostrarPolinomio() + "\nSuma polinomios\n" + objeto3.mostrarPolinomio());
             } else if (e.getSource() == boton8) {
-                objeto1.derivadaPol(objeto1);
+                objeto3.derivadaPol(objeto1);
+                JOptionPane.showMessageDialog(null,
+                        "Polinomio:\n" + objeto1.mostrarPolinomio() + "\nDerivada\n"
+                                + objeto3.mostrarPolinomio());
             }
         }
 
